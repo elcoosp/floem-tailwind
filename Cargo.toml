@@ -7,7 +7,7 @@ description = "Tailwind-style utility methods for Floem styling"
 license = "MIT"
 
 [dependencies]
-floem = { version = "0.2" }
+floem = { version = "https://github.com/lapce/floem" }
 peniko = "0.5"
 
 [[example]]
