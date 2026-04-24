@@ -7,8 +7,8 @@ description = "Tailwind-style utility methods for Floem styling"
 license = "MIT"
 
 [dependencies]
-floem = { path = "../floem" }
-peniko = "0.5.0"
+floem = { version = "0.2" }
+peniko = "0.5"
 
 [[example]]
 name = "demo"
