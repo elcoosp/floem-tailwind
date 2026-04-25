@@ -49,6 +49,7 @@ pub mod colors;
 pub mod flexbox;
 pub mod layout;
 pub mod interactivity;
+pub mod colors_ext;
 
 /// Tailwind-style spacing scale (in pixels)
 /// Each unit = 4px (following Tailwind's 0.25rem base with 16px root)
@@ -3322,3 +3323,4 @@ mod tests {
 pub use flexbox::TailwindFlexboxExt;
 pub use layout::TailwindLayoutExt;
 pub use interactivity::TailwindInteractivityExt;
+pub use colors_ext::TailwindColorExt;
