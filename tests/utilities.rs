@@ -21,135 +21,46 @@ macro_rules! test_trait_methods {
     };
 }
 
-// flexbox (removed flex_row_reverse)
 test_trait_methods!(TailwindFlexboxExt, test_flexbox,
-    flex_row,
-    flex_col,
-    flex_col_reverse,
-    flex_wrap,
-    flex_nowrap,
-    flex_wrap_reverse,
-    grow,
-    grow_0,
-    shrink,
-    shrink_0,
-    basis_0,
-    basis_auto,
-    basis_px,
-    basis_0_5,
-    basis_1,
-    basis_1_5,
-    basis_2,
-    basis_2_5,
-    basis_3,
-    basis_3_5,
-    basis_4,
-    basis_5,
-    basis_6,
-    basis_7,
-    basis_8,
-    basis_9,
-    basis_10,
-    basis_11,
-    basis_12,
-    basis_14,
-    basis_16,
-    basis_20,
-    basis_24,
-    basis_28,
-    basis_32,
-    basis_36,
-    basis_40,
-    basis_44,
-    basis_48,
-    basis_52,
-    basis_56,
-    basis_60,
-    basis_64,
-    basis_72,
-    basis_80,
+    flex_row, flex_col, flex_col_reverse, flex_wrap, flex_nowrap, flex_wrap_reverse,
+    grow, grow_0, shrink, shrink_0,
+    basis_0, basis_auto, basis_px, basis_0_5, basis_1, basis_1_5, basis_2, basis_2_5,
+    basis_3, basis_3_5, basis_4, basis_5, basis_6, basis_7, basis_8, basis_9, basis_10,
+    basis_11, basis_12, basis_14, basis_16, basis_20, basis_24, basis_28, basis_32, basis_36,
+    basis_40, basis_44, basis_48, basis_52, basis_56, basis_60, basis_64, basis_72, basis_80,
     basis_96,
-    justify_start,
-    justify_end,
-    justify_center,
-    justify_between,
-    justify_around,
-    justify_evenly,
-    items_start,
-    items_end,
-    items_center,
-    items_baseline,
-    items_stretch,
-    self_auto,
-    self_start,
-    self_end,
-    self_center,
-    self_stretch,
-    content_normal,
-    content_start,
-    content_end,
-    content_center,
-    content_between,
-    content_around,
-    content_evenly,
-    content_stretch
+    justify_start, justify_end, justify_center, justify_between, justify_around, justify_evenly,
+    items_start, items_end, items_center, items_baseline, items_stretch,
+    self_auto, self_start, self_end, self_center, self_stretch,
+    content_normal, content_start, content_end, content_center,
+    content_between, content_around, content_evenly, content_stretch
 );
 
-// layout (removed block, top_0 etc.)
 test_trait_methods!(TailwindLayoutExt, test_layout,
-    flex,
-    grid,
-    hidden,
-    relative,
-    absolute,
-    z_0,
-    z_10,
-    z_20,
-    z_30,
-    z_40,
-    z_50,
-    z_auto,
-    inset_x_0,
-    inset_y_0,
-    truncate,
-    text_ellipsis,
-    text_clip
+    flex, grid, hidden, relative, absolute,
+    z_0, z_10, z_20, z_30, z_40, z_50, z_auto,
+    inset_x_0, inset_y_0, truncate, text_ellipsis, text_clip
 );
 
-// interactivity (removed cursor_pointer)
 test_trait_methods!(TailwindInteractivityExt, test_interactivity,
-    cursor_default,
-    cursor_wait,
-    cursor_text,
-    cursor_move,
-    cursor_grab,
-    select_none,
-    select_text,
-    select_all,
-    select_auto,
-    pointer_events_none,
-    pointer_events_auto
+    cursor_default, cursor_wait, cursor_text, cursor_move, cursor_grab,
+    select_none, select_text, select_all, select_auto,
+    pointer_events_none, pointer_events_auto
 );
 
-// gap
 test_trait_methods!(TailwindGapExt, test_gap,
-    gap_x_0, gap_x_px, gap_x_0_5, gap_x_1, gap_x_1_5,
-    gap_x_2, gap_x_2_5, gap_x_3, gap_x_3_5, gap_x_4,
-    gap_x_5, gap_x_6, gap_x_7, gap_x_8, gap_x_9,
-    gap_x_10, gap_x_11, gap_x_12, gap_x_14, gap_x_16,
-    gap_x_20, gap_x_24, gap_x_28, gap_x_32, gap_x_36,
-    gap_x_40, gap_x_44, gap_x_48, gap_x_52, gap_x_56,
-    gap_x_60, gap_x_64, gap_x_72, gap_x_80, gap_x_96,
-    gap_y_0, gap_y_px, gap_y_0_5, gap_y_1, gap_y_1_5,
-    gap_y_2, gap_y_2_5, gap_y_3, gap_y_3_5, gap_y_4,
-    gap_y_5, gap_y_6, gap_y_7, gap_y_8, gap_y_9,
-    gap_y_10, gap_y_11, gap_y_12, gap_y_14, gap_y_16,
-    gap_y_20, gap_y_24, gap_y_28, gap_y_32, gap_y_36,
-    gap_y_40, gap_y_44, gap_y_48, gap_y_52, gap_y_56,
-    gap_y_60, gap_y_64, gap_y_72, gap_y_80, gap_y_96
+    gap_x_0, gap_x_px, gap_x_0_5, gap_x_1, gap_x_1_5, gap_x_2, gap_x_2_5,
+    gap_x_3, gap_x_3_5, gap_x_4, gap_x_5, gap_x_6, gap_x_7, gap_x_8, gap_x_9,
+    gap_x_10, gap_x_11, gap_x_12, gap_x_14, gap_x_16, gap_x_20, gap_x_24,
+    gap_x_28, gap_x_32, gap_x_36, gap_x_40, gap_x_44, gap_x_48, gap_x_52,
+    gap_x_56, gap_x_60, gap_x_64, gap_x_72, gap_x_80, gap_x_96,
+    gap_y_0, gap_y_px, gap_y_0_5, gap_y_1, gap_y_1_5, gap_y_2, gap_y_2_5,
+    gap_y_3, gap_y_3_5, gap_y_4, gap_y_5, gap_y_6, gap_y_7, gap_y_8, gap_y_9,
+    gap_y_10, gap_y_11, gap_y_12, gap_y_14, gap_y_16, gap_y_20, gap_y_24,
+    gap_y_28, gap_y_32, gap_y_36, gap_y_40, gap_y_44, gap_y_48, gap_y_52,
+    gap_y_56, gap_y_60, gap_y_64, gap_y_72, gap_y_80, gap_y_96
 );
 
-// border_side
 test_trait_methods!(TailwindBorderSideExt, test_border_side,
     border_t_0, border_t_1, border_t_2, border_t_4, border_t_8,
     border_r_0, border_r_1, border_r_2, border_r_4, border_r_8,
@@ -159,22 +70,19 @@ test_trait_methods!(TailwindBorderSideExt, test_border_side,
     border_y_0, border_y_1, border_y_2, border_y_4, border_y_8
 );
 
-// opacity (without opacity_0)
 test_trait_methods!(TailwindOpacityExt, test_opacity,
-    opacity_5, opacity_10, opacity_15, opacity_20,
-    opacity_25, opacity_30, opacity_35, opacity_40, opacity_45,
-    opacity_50, opacity_55, opacity_60, opacity_65, opacity_70,
-    opacity_75, opacity_80, opacity_85, opacity_90, opacity_95, opacity_100
+    opacity_5, opacity_10, opacity_15, opacity_20, opacity_25,
+    opacity_30, opacity_35, opacity_40, opacity_45, opacity_50,
+    opacity_55, opacity_60, opacity_65, opacity_70, opacity_75,
+    opacity_80, opacity_85, opacity_90, opacity_95, opacity_100
 );
 
-// leading (without leading_none)
 test_trait_methods!(TailwindLeadingExt, test_leading,
     leading_3, leading_4, leading_5, leading_6, leading_7,
-    leading_8, leading_9, leading_10,
-    leading_tight, leading_snug, leading_normal, leading_relaxed, leading_loose
+    leading_8, leading_9, leading_10, leading_tight, leading_snug,
+    leading_normal, leading_relaxed, leading_loose
 );
 
-// inset (all except _0 suffixes)
 test_trait_methods!(TailwindInsetExt, test_inset,
     top_px, top_0_5, top_1, top_1_5, top_2, top_2_5, top_3, top_3_5,
     top_4, top_5, top_6, top_7, top_8, top_9, top_10, top_11, top_12,
@@ -206,7 +114,6 @@ test_trait_methods!(TailwindInsetExt, test_inset,
     inset_y_44, inset_y_48, inset_y_52, inset_y_56, inset_y_60, inset_y_64, inset_y_72, inset_y_80, inset_y_96
 );
 
-// min_max_height
 test_trait_methods!(TailwindMinMaxHeightExt, test_min_max_height,
     min_h_0, min_h_px, min_h_0_5, min_h_1, min_h_1_5, min_h_2, min_h_2_5, min_h_3, min_h_3_5,
     min_h_4, min_h_5, min_h_6, min_h_7, min_h_8, min_h_9, min_h_10, min_h_11, min_h_12,
@@ -218,14 +125,12 @@ test_trait_methods!(TailwindMinMaxHeightExt, test_min_max_height,
     max_h_44, max_h_48, max_h_52, max_h_56, max_h_60, max_h_64, max_h_72, max_h_80, max_h_96
 );
 
-// number_font_size
 test_trait_methods!(TailwindNumberFontSizeExt, test_number_font_size,
     text_12, text_14, text_16, text_18, text_20, text_24, text_28, text_32,
     text_36, text_40, text_44, text_48, text_52, text_56, text_60, text_64,
     text_72, text_80, text_96
 );
 
-// colors_ext (all methods since regenerated)
 test_trait_methods!(TailwindColorExt, test_colors_ext,
     bg_neutral_50, bg_neutral_100, bg_neutral_200, bg_neutral_300, bg_neutral_400, bg_neutral_500, bg_neutral_600, bg_neutral_700, bg_neutral_800, bg_neutral_900, bg_neutral_950,
     bg_stone_50, bg_stone_100, bg_stone_200, bg_stone_300, bg_stone_400, bg_stone_500, bg_stone_600, bg_stone_700, bg_stone_800, bg_stone_900, bg_stone_950,
@@ -277,7 +182,6 @@ test_trait_methods!(TailwindColorExt, test_colors_ext,
     border_rose_50, border_rose_100, border_rose_200, border_rose_300, border_rose_400, border_rose_500, border_rose_600, border_rose_700, border_rose_800, border_rose_900, border_rose_950
 );
 
-// original TailwindExt smoke test
 test_trait_methods!(TailwindExt, test_original_ext,
     p_4, m_2, rounded_md, text_slate_900, w_full
 );
