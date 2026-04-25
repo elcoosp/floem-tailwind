@@ -1,7 +1,6 @@
 use floem::style::Style;
 
 pub trait TailwindOpacityExt {
-    fn opacity_0(self) -> Self;
     fn opacity_5(self) -> Self;
     fn opacity_10(self) -> Self;
     fn opacity_15(self) -> Self;
@@ -24,7 +23,6 @@ pub trait TailwindOpacityExt {
     fn opacity_100(self) -> Self;
 }
 impl TailwindOpacityExt for Style {
-    fn opacity_0(self) -> Self { self.opacity(0.00) }
     fn opacity_5(self) -> Self { self.opacity(0.05) }
     fn opacity_10(self) -> Self { self.opacity(0.10) }
     fn opacity_15(self) -> Self { self.opacity(0.15) }

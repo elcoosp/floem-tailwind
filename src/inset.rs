@@ -1,12 +1,6 @@
 use floem::style::Style;
+
 pub trait TailwindInsetExt {
-    fn top_0(self) -> Self;
-    fn right_0(self) -> Self;
-    fn bottom_0(self) -> Self;
-    fn left_0(self) -> Self;
-    fn inset_0(self) -> Self;
-    fn inset_x_0(self) -> Self;
-    fn inset_y_0(self) -> Self;
     fn top_px(self) -> Self;
     fn right_px(self) -> Self;
     fn bottom_px(self) -> Self;
@@ -246,14 +240,8 @@ pub trait TailwindInsetExt {
     fn inset_x_96(self) -> Self;
     fn inset_y_96(self) -> Self;
 }
+
 impl TailwindInsetExt for Style {
-    fn top_0(self) -> Self { self.inset_top(0.0) }
-    fn right_0(self) -> Self { self.inset_right(0.0) }
-    fn bottom_0(self) -> Self { self.inset_bottom(0.0) }
-    fn left_0(self) -> Self { self.inset_left(0.0) }
-    fn inset_0(self) -> Self { self.inset_top(0.0).inset_right(0.0).inset_bottom(0.0).inset_left(0.0) }
-    fn inset_x_0(self) -> Self { self.inset_left(0.0).inset_right(0.0) }
-    fn inset_y_0(self) -> Self { self.inset_top(0.0).inset_bottom(0.0) }
     fn top_px(self) -> Self { self.inset_top(1.0) }
     fn right_px(self) -> Self { self.inset_right(1.0) }
     fn bottom_px(self) -> Self { self.inset_bottom(1.0) }

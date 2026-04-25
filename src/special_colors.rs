@@ -1,10 +1,18 @@
-use super::colors;
 use floem::style::Style;
+use super::colors;
+
 pub trait TailwindSpecialColorExt {
-    fn bg_white(self) -> Self; fn bg_black(self) -> Self; fn bg_transparent(self) -> Self;
-    fn text_white(self) -> Self; fn text_black(self) -> Self; fn text_transparent(self) -> Self;
-    fn border_white(self) -> Self; fn border_black(self) -> Self; fn border_transparent(self) -> Self;
+    fn bg_white(self) -> Self;
+    fn bg_black(self) -> Self;
+    fn bg_transparent(self) -> Self;
+    fn text_white(self) -> Self;
+    fn text_black(self) -> Self;
+    fn text_transparent(self) -> Self;
+    fn border_white(self) -> Self;
+    fn border_black(self) -> Self;
+    fn border_transparent(self) -> Self;
 }
+
 impl TailwindSpecialColorExt for Style {
     fn bg_white(self) -> Self { self.background(colors::WHITE) }
     fn bg_black(self) -> Self { self.background(colors::BLACK) }

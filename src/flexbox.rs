@@ -3,7 +3,6 @@ use floem::style::{AlignContent, AlignItems, JustifyContent, Style};
 pub trait TailwindFlexboxExt {
     fn flex_row(self) -> Self;
     fn flex_col(self) -> Self;
-    fn flex_row_reverse(self) -> Self;
     fn flex_col_reverse(self) -> Self;
     fn flex_wrap(self) -> Self;
     fn flex_nowrap(self) -> Self;
@@ -77,7 +76,6 @@ pub trait TailwindFlexboxExt {
 impl TailwindFlexboxExt for Style {
     fn flex_row(self) -> Self { self.flex_row() }
     fn flex_col(self) -> Self { self.flex_col() }
-    fn flex_row_reverse(self) -> Self { self.flex_direction(floem::style::FlexDirection::RowReverse) }
     fn flex_col_reverse(self) -> Self { self.flex_direction(floem::style::FlexDirection::ColumnReverse) }
 
     fn flex_wrap(self) -> Self { self.flex_wrap(floem::style::FlexWrap::Wrap) }

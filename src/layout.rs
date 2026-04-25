@@ -1,7 +1,6 @@
 use floem::style::{Display, Position, Style};
 
 pub trait TailwindLayoutExt {
-    fn block(self) -> Self;
     fn flex(self) -> Self;
     fn grid(self) -> Self;
     fn hidden(self) -> Self;
@@ -16,17 +15,12 @@ pub trait TailwindLayoutExt {
     fn z_auto(self) -> Self;
     fn inset_x_0(self) -> Self;
     fn inset_y_0(self) -> Self;
-    fn top_0(self) -> Self;
-    fn right_0(self) -> Self;
-    fn bottom_0(self) -> Self;
-    fn left_0(self) -> Self;
     fn truncate(self) -> Self;
     fn text_ellipsis(self) -> Self;
     fn text_clip(self) -> Self;
 }
 
 impl TailwindLayoutExt for Style {
-    fn block(self) -> Self { self.display(Display::Block) }
     fn flex(self) -> Self { self.display(Display::Flex) }
     fn grid(self) -> Self { self.display(Display::Grid) }
     fn hidden(self) -> Self { self.hide() }
@@ -41,10 +35,6 @@ impl TailwindLayoutExt for Style {
     fn z_auto(self) -> Self { self.z_index(i32::MAX) }
     fn inset_x_0(self) -> Self { self.inset_left(0.0).inset_right(0.0) }
     fn inset_y_0(self) -> Self { self.inset_top(0.0).inset_bottom(0.0) }
-    fn top_0(self) -> Self { self.inset_top(0.0) }
-    fn right_0(self) -> Self { self.inset_right(0.0) }
-    fn bottom_0(self) -> Self { self.inset_bottom(0.0) }
-    fn left_0(self) -> Self { self.inset_left(0.0) }
     fn truncate(self) -> Self { self.text_ellipsis() }
     fn text_ellipsis(self) -> Self { self.text_ellipsis() }
     fn text_clip(self) -> Self { self.text_clip() }

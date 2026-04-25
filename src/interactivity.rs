@@ -1,7 +1,6 @@
 use floem::style::{CursorStyle, Style};
 
 pub trait TailwindInteractivityExt {
-    fn cursor_pointer(self) -> Self;
     fn cursor_default(self) -> Self;
     fn cursor_wait(self) -> Self;
     fn cursor_text(self) -> Self;
@@ -16,7 +15,6 @@ pub trait TailwindInteractivityExt {
 }
 
 impl TailwindInteractivityExt for Style {
-    fn cursor_pointer(self) -> Self { self.cursor(CursorStyle::Pointer) }
     fn cursor_default(self) -> Self { self.cursor(CursorStyle::Default) }
     fn cursor_wait(self) -> Self { self.cursor(CursorStyle::Wait) }
     fn cursor_text(self) -> Self { self.cursor(CursorStyle::Text) }
