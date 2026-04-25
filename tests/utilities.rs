@@ -24,11 +24,12 @@ macro_rules! test_trait_methods {
 test_trait_methods!(TailwindFlexboxExt, test_flexbox,
     flex_row, flex_col, flex_col_reverse, flex_wrap, flex_nowrap, flex_wrap_reverse,
     grow, grow_0, shrink, shrink_0,
-    basis_0, basis_auto, basis_px, basis_0_5, basis_1, basis_1_5, basis_2, basis_2_5,
-    basis_3, basis_3_5, basis_4, basis_5, basis_6, basis_7, basis_8, basis_9, basis_10,
-    basis_11, basis_12, basis_14, basis_16, basis_20, basis_24, basis_28, basis_32, basis_36,
-    basis_40, basis_44, basis_48, basis_52, basis_56, basis_60, basis_64, basis_72, basis_80,
-    basis_96,
+    basis_0, basis_auto, basis_px, basis_0_5, basis_1, basis_1_5,
+    basis_2, basis_2_5, basis_3, basis_3_5, basis_4, basis_5,
+    basis_6, basis_7, basis_8, basis_9, basis_10,
+    basis_11, basis_12, basis_14, basis_16, basis_20, basis_24,
+    basis_28, basis_32, basis_36, basis_40, basis_44, basis_48,
+    basis_52, basis_56, basis_60, basis_64, basis_72, basis_80, basis_96,
     justify_start, justify_end, justify_center, justify_between, justify_around, justify_evenly,
     items_start, items_end, items_center, items_baseline, items_stretch,
     self_auto, self_start, self_end, self_center, self_stretch,
@@ -49,16 +50,20 @@ test_trait_methods!(TailwindInteractivityExt, test_interactivity,
 );
 
 test_trait_methods!(TailwindGapExt, test_gap,
-    gap_x_0, gap_x_px, gap_x_0_5, gap_x_1, gap_x_1_5, gap_x_2, gap_x_2_5,
-    gap_x_3, gap_x_3_5, gap_x_4, gap_x_5, gap_x_6, gap_x_7, gap_x_8, gap_x_9,
-    gap_x_10, gap_x_11, gap_x_12, gap_x_14, gap_x_16, gap_x_20, gap_x_24,
-    gap_x_28, gap_x_32, gap_x_36, gap_x_40, gap_x_44, gap_x_48, gap_x_52,
-    gap_x_56, gap_x_60, gap_x_64, gap_x_72, gap_x_80, gap_x_96,
-    gap_y_0, gap_y_px, gap_y_0_5, gap_y_1, gap_y_1_5, gap_y_2, gap_y_2_5,
-    gap_y_3, gap_y_3_5, gap_y_4, gap_y_5, gap_y_6, gap_y_7, gap_y_8, gap_y_9,
-    gap_y_10, gap_y_11, gap_y_12, gap_y_14, gap_y_16, gap_y_20, gap_y_24,
-    gap_y_28, gap_y_32, gap_y_36, gap_y_40, gap_y_44, gap_y_48, gap_y_52,
-    gap_y_56, gap_y_60, gap_y_64, gap_y_72, gap_y_80, gap_y_96
+    gap_x_0, gap_x_px, gap_x_0_5, gap_x_1, gap_x_1_5,
+    gap_x_2, gap_x_2_5, gap_x_3, gap_x_3_5, gap_x_4,
+    gap_x_5, gap_x_6, gap_x_7, gap_x_8, gap_x_9,
+    gap_x_10, gap_x_11, gap_x_12, gap_x_14, gap_x_16,
+    gap_x_20, gap_x_24, gap_x_28, gap_x_32, gap_x_36,
+    gap_x_40, gap_x_44, gap_x_48, gap_x_52, gap_x_56,
+    gap_x_60, gap_x_64, gap_x_72, gap_x_80, gap_x_96,
+    gap_y_0, gap_y_px, gap_y_0_5, gap_y_1, gap_y_1_5,
+    gap_y_2, gap_y_2_5, gap_y_3, gap_y_3_5, gap_y_4,
+    gap_y_5, gap_y_6, gap_y_7, gap_y_8, gap_y_9,
+    gap_y_10, gap_y_11, gap_y_12, gap_y_14, gap_y_16,
+    gap_y_20, gap_y_24, gap_y_28, gap_y_32, gap_y_36,
+    gap_y_40, gap_y_44, gap_y_48, gap_y_52, gap_y_56,
+    gap_y_60, gap_y_64, gap_y_72, gap_y_80, gap_y_96
 );
 
 test_trait_methods!(TailwindBorderSideExt, test_border_side,
@@ -71,16 +76,16 @@ test_trait_methods!(TailwindBorderSideExt, test_border_side,
 );
 
 test_trait_methods!(TailwindOpacityExt, test_opacity,
-    opacity_5, opacity_10, opacity_15, opacity_20, opacity_25,
-    opacity_30, opacity_35, opacity_40, opacity_45, opacity_50,
-    opacity_55, opacity_60, opacity_65, opacity_70, opacity_75,
-    opacity_80, opacity_85, opacity_90, opacity_95, opacity_100
+    opacity_5, opacity_10, opacity_15, opacity_20,
+    opacity_25, opacity_30, opacity_35, opacity_40, opacity_45,
+    opacity_50, opacity_55, opacity_60, opacity_65, opacity_70,
+    opacity_75, opacity_80, opacity_85, opacity_90, opacity_95, opacity_100
 );
 
 test_trait_methods!(TailwindLeadingExt, test_leading,
     leading_3, leading_4, leading_5, leading_6, leading_7,
-    leading_8, leading_9, leading_10, leading_tight, leading_snug,
-    leading_normal, leading_relaxed, leading_loose
+    leading_8, leading_9, leading_10,
+    leading_tight, leading_snug, leading_normal, leading_relaxed, leading_loose
 );
 
 test_trait_methods!(TailwindInsetExt, test_inset,
