@@ -53,6 +53,7 @@ pub mod colors_ext;
 pub mod gap;
 pub mod opacity;
 pub mod border_side;
+pub mod special_colors;
 
 /// Tailwind-style spacing scale (in pixels)
 /// Each unit = 4px (following Tailwind's 0.25rem base with 16px root)
@@ -3330,3 +3331,4 @@ pub use colors_ext::TailwindColorExt;
 pub use gap::TailwindGapExt;
 pub use opacity::TailwindOpacityExt;
 pub use border_side::TailwindBorderSideExt;
+pub use special_colors::TailwindSpecialColorExt;
