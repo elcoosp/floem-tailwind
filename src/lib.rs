@@ -57,6 +57,7 @@ pub mod special_colors;
 pub mod leading;
 pub mod inset;
 pub mod min_max_height;
+pub mod number_font_size;
 
 /// Tailwind-style spacing scale (in pixels)
 /// Each unit = 4px (following Tailwind's 0.25rem base with 16px root)
@@ -3338,3 +3339,4 @@ pub use special_colors::TailwindSpecialColorExt;
 pub use leading::TailwindLeadingExt;
 pub use inset::TailwindInsetExt;
 pub use min_max_height::TailwindMinMaxHeightExt;
+pub use number_font_size::TailwindNumberFontSizeExt;
