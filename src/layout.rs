@@ -26,26 +26,26 @@ pub trait TailwindLayoutExt {
 }
 
 impl TailwindLayoutExt for Style {
-    fn block(mut self) -> Self { self = self.display(Display::Block); self }
-    fn flex(mut self) -> Self { self = self.display(Display::Flex); self }
-    fn grid(mut self) -> Self { self = self.display(Display::Grid); self }
-    fn hidden(mut self) -> Self { self = self.hide(); self }
-    fn relative(mut self) -> Self { self = self.position(Position::Relative); self }
-    fn absolute(mut self) -> Self { self = self.position(Position::Absolute); self }
-    fn z_0(mut self) -> Self { self = self.z_index(0); self }
-    fn z_10(mut self) -> Self { self = self.z_index(10); self }
-    fn z_20(mut self) -> Self { self = self.z_index(20); self }
-    fn z_30(mut self) -> Self { self = self.z_index(30); self }
-    fn z_40(mut self) -> Self { self = self.z_index(40); self }
-    fn z_50(mut self) -> Self { self = self.z_index(50); self }
-    fn z_auto(mut self) -> Self { self = self.z_index(i32::MAX); self }
-    fn inset_x_0(mut self) -> Self { self = self.inset_left(0.0).inset_right(0.0); self }
-    fn inset_y_0(mut self) -> Self { self = self.inset_top(0.0).inset_bottom(0.0); self }
-    fn top_0(mut self) -> Self { self = self.inset_top(0.0); self }
-    fn right_0(mut self) -> Self { self = self.inset_right(0.0); self }
-    fn bottom_0(mut self) -> Self { self = self.inset_bottom(0.0); self }
-    fn left_0(mut self) -> Self { self = self.inset_left(0.0); self }
-    fn truncate(mut self) -> Self { self = self.text_ellipsis(); self }
-    fn text_ellipsis(mut self) -> Self { self = self.text_ellipsis(); self }
-    fn text_clip(mut self) -> Self { self = self.text_clip(); self }
+    fn block(self) -> Self { self.display(Display::Block) }
+    fn flex(self) -> Self { self.display(Display::Flex) }
+    fn grid(self) -> Self { self.display(Display::Grid) }
+    fn hidden(self) -> Self { self.hide() }
+    fn relative(self) -> Self { self.position(Position::Relative) }
+    fn absolute(self) -> Self { self.position(Position::Absolute) }
+    fn z_0(self) -> Self { self.z_index(0) }
+    fn z_10(self) -> Self { self.z_index(10) }
+    fn z_20(self) -> Self { self.z_index(20) }
+    fn z_30(self) -> Self { self.z_index(30) }
+    fn z_40(self) -> Self { self.z_index(40) }
+    fn z_50(self) -> Self { self.z_index(50) }
+    fn z_auto(self) -> Self { self.z_index(i32::MAX) }
+    fn inset_x_0(self) -> Self { self.inset_left(0.0).inset_right(0.0) }
+    fn inset_y_0(self) -> Self { self.inset_top(0.0).inset_bottom(0.0) }
+    fn top_0(self) -> Self { self.inset_top(0.0) }
+    fn right_0(self) -> Self { self.inset_right(0.0) }
+    fn bottom_0(self) -> Self { self.inset_bottom(0.0) }
+    fn left_0(self) -> Self { self.inset_left(0.0) }
+    fn truncate(self) -> Self { self.text_ellipsis() }
+    fn text_ellipsis(self) -> Self { self.text_ellipsis() }
+    fn text_clip(self) -> Self { self.text_clip() }
 }

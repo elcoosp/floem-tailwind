@@ -16,16 +16,16 @@ pub trait TailwindInteractivityExt {
 }
 
 impl TailwindInteractivityExt for Style {
-    fn cursor_pointer(mut self) -> Self { self = self.cursor(CursorStyle::Pointer); self }
-    fn cursor_default(mut self) -> Self { self = self.cursor(CursorStyle::Default); self }
-    fn cursor_wait(mut self) -> Self { self = self.cursor(CursorStyle::Wait); self }
-    fn cursor_text(mut self) -> Self { self = self.cursor(CursorStyle::Text); self }
-    fn cursor_move(mut self) -> Self { self = self.cursor(CursorStyle::Move); self }
-    fn cursor_grab(mut self) -> Self { self = self.cursor(CursorStyle::Grab); self }
-    fn select_none(mut self) -> Self { self = self.selectable(false); self }
-    fn select_text(mut self) -> Self { self = self.selectable(true); self }
-    fn select_all(mut self) -> Self { self = self.selectable(true); self }
-    fn select_auto(mut self) -> Self { self = self.selectable(true); self }
+    fn cursor_pointer(self) -> Self { self.cursor(CursorStyle::Pointer) }
+    fn cursor_default(self) -> Self { self.cursor(CursorStyle::Default) }
+    fn cursor_wait(self) -> Self { self.cursor(CursorStyle::Wait) }
+    fn cursor_text(self) -> Self { self.cursor(CursorStyle::Text) }
+    fn cursor_move(self) -> Self { self.cursor(CursorStyle::Move) }
+    fn cursor_grab(self) -> Self { self.cursor(CursorStyle::Grab) }
+    fn select_none(self) -> Self { self.selectable(false) }
+    fn select_text(self) -> Self { self.selectable(true) }
+    fn select_all(self) -> Self { self.selectable(true) }
+    fn select_auto(self) -> Self { self.selectable(true) }
     fn pointer_events_none(self) -> Self { self }
     fn pointer_events_auto(self) -> Self { self }
 }
