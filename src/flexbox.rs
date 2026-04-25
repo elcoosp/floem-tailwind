@@ -14,6 +14,40 @@ pub trait TailwindFlexboxExt {
     fn shrink_0(self) -> Self;
     fn basis_0(self) -> Self;
     fn basis_auto(self) -> Self;
+    fn basis_px(self) -> Self;
+    fn basis_0_5(self) -> Self;
+    fn basis_1(self) -> Self;
+    fn basis_1_5(self) -> Self;
+    fn basis_2(self) -> Self;
+    fn basis_2_5(self) -> Self;
+    fn basis_3(self) -> Self;
+    fn basis_3_5(self) -> Self;
+    fn basis_4(self) -> Self;
+    fn basis_5(self) -> Self;
+    fn basis_6(self) -> Self;
+    fn basis_7(self) -> Self;
+    fn basis_8(self) -> Self;
+    fn basis_9(self) -> Self;
+    fn basis_10(self) -> Self;
+    fn basis_11(self) -> Self;
+    fn basis_12(self) -> Self;
+    fn basis_14(self) -> Self;
+    fn basis_16(self) -> Self;
+    fn basis_20(self) -> Self;
+    fn basis_24(self) -> Self;
+    fn basis_28(self) -> Self;
+    fn basis_32(self) -> Self;
+    fn basis_36(self) -> Self;
+    fn basis_40(self) -> Self;
+    fn basis_44(self) -> Self;
+    fn basis_48(self) -> Self;
+    fn basis_52(self) -> Self;
+    fn basis_56(self) -> Self;
+    fn basis_60(self) -> Self;
+    fn basis_64(self) -> Self;
+    fn basis_72(self) -> Self;
+    fn basis_80(self) -> Self;
+    fn basis_96(self) -> Self;
     fn justify_start(self) -> Self;
     fn justify_end(self) -> Self;
     fn justify_center(self) -> Self;
@@ -54,8 +88,43 @@ impl TailwindFlexboxExt for Style {
     fn grow_0(self) -> Self { self.flex_grow(0.0) }
     fn shrink(self) -> Self { self.flex_shrink(1.0) }
     fn shrink_0(self) -> Self { self.flex_shrink(0.0) }
-    fn basis_0(self) -> Self { self.flex_basis(0.0) }
-    fn basis_auto(self) -> Self { self.flex_basis(f32::NAN) }
+
+    fn basis_0(mut self) -> Self   { self = self.flex_basis(0.0); self }
+    fn basis_auto(mut self) -> Self { self = self.flex_basis(f32::NAN); self }
+    fn basis_px(mut self) -> Self  { self = self.flex_basis(1.0); self }
+    fn basis_0_5(mut self) -> Self { self = self.flex_basis(2.0); self }
+    fn basis_1(mut self) -> Self   { self = self.flex_basis(4.0); self }
+    fn basis_1_5(mut self) -> Self { self = self.flex_basis(6.0); self }
+    fn basis_2(mut self) -> Self   { self = self.flex_basis(8.0); self }
+    fn basis_2_5(mut self) -> Self { self = self.flex_basis(10.0); self }
+    fn basis_3(mut self) -> Self   { self = self.flex_basis(12.0); self }
+    fn basis_3_5(mut self) -> Self { self = self.flex_basis(14.0); self }
+    fn basis_4(mut self) -> Self   { self = self.flex_basis(16.0); self }
+    fn basis_5(mut self) -> Self   { self = self.flex_basis(20.0); self }
+    fn basis_6(mut self) -> Self   { self = self.flex_basis(24.0); self }
+    fn basis_7(mut self) -> Self   { self = self.flex_basis(28.0); self }
+    fn basis_8(mut self) -> Self   { self = self.flex_basis(32.0); self }
+    fn basis_9(mut self) -> Self   { self = self.flex_basis(36.0); self }
+    fn basis_10(mut self) -> Self  { self = self.flex_basis(40.0); self }
+    fn basis_11(mut self) -> Self  { self = self.flex_basis(44.0); self }
+    fn basis_12(mut self) -> Self  { self = self.flex_basis(48.0); self }
+    fn basis_14(mut self) -> Self  { self = self.flex_basis(56.0); self }
+    fn basis_16(mut self) -> Self  { self = self.flex_basis(64.0); self }
+    fn basis_20(mut self) -> Self  { self = self.flex_basis(80.0); self }
+    fn basis_24(mut self) -> Self  { self = self.flex_basis(96.0); self }
+    fn basis_28(mut self) -> Self  { self = self.flex_basis(112.0); self }
+    fn basis_32(mut self) -> Self  { self = self.flex_basis(128.0); self }
+    fn basis_36(mut self) -> Self  { self = self.flex_basis(144.0); self }
+    fn basis_40(mut self) -> Self  { self = self.flex_basis(160.0); self }
+    fn basis_44(mut self) -> Self  { self = self.flex_basis(176.0); self }
+    fn basis_48(mut self) -> Self  { self = self.flex_basis(192.0); self }
+    fn basis_52(mut self) -> Self  { self = self.flex_basis(208.0); self }
+    fn basis_56(mut self) -> Self  { self = self.flex_basis(224.0); self }
+    fn basis_60(mut self) -> Self  { self = self.flex_basis(240.0); self }
+    fn basis_64(mut self) -> Self  { self = self.flex_basis(256.0); self }
+    fn basis_72(mut self) -> Self  { self = self.flex_basis(288.0); self }
+    fn basis_80(mut self) -> Self  { self = self.flex_basis(320.0); self }
+    fn basis_96(mut self) -> Self  { self = self.flex_basis(384.0); self }
 
     fn justify_start(self) -> Self { self.justify_content(JustifyContent::FlexStart) }
     fn justify_end(self) -> Self { self.justify_content(JustifyContent::FlexEnd) }
